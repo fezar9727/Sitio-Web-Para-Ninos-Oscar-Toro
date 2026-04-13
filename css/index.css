@@ -44,21 +44,6 @@
 
 
 
-/* @media (max-width: 768px) {
-    .header {
-        padding: 15px 5%;
-        flex-direction: column;
-        gap: 15px;
-    }
-    
-    .nav {
-        gap: 25px;
-    }
-} */
-
-
-
-
 /* ------------hero------------- */
 .hero {
     /* aqui coloco el fondo de pantalla, porque en html creo que no se puede,
@@ -308,4 +293,5 @@
 
 
 /* ------------RESPONSIVE------------- */
+
 
