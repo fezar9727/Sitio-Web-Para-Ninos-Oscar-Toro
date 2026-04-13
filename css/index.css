@@ -1,0 +1,311 @@
+
+/* ------------header------------- */
+.header {
+    background-color: #f8a41d; 
+    padding: 15px 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo a {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #000;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
+.logo a:hover {
+    color: #333;
+}
+
+.nav {
+    display: flex;
+    gap: 40px;
+}
+
+.nav a {
+    color: #000;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.05rem;
+    transition: all 0.3s ease;
+}
+
+.nav a:hover {
+    color: #fff;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+
+
+/* @media (max-width: 768px) {
+    .header {
+        padding: 15px 5%;
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .nav {
+        gap: 25px;
+    }
+} */
+
+
+
+
+/* ------------hero------------- */
+.hero {
+    /* aqui coloco el fondo de pantalla, porque en html creo que no se puede,
+     bueno talves si, pero me falta aprender cositas */
+    background-image: url('/img/background.png'); 
+    background-size: cover; 
+    background-position: 90% center; 
+    background-repeat: no-repeat;
+    min-height: 130vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.hero-container {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 5%;
+}
+
+
+.hero-title {
+    font-size: 10rem;
+    color: white;
+    font-weight: 900;
+    margin-bottom: 0;
+    line-height: 1;
+    text-transform: uppercase;
+}
+
+.hero-description {
+    font-size: 1.8rem;
+    color: white;
+    font-weight: 500;
+    margin-bottom: 40px;
+    max-width: 450px;
+    line-height: 1.2;
+}
+
+.btn-buy-now {
+    background-color: #A1E8E4;
+    border: none;
+    padding: 18px 50px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+
+
+/* ------------about------------- */
+.about {
+    padding: 100px 20px;      
+    text-align: center;       
+    background-color: #fff;   
+    max-width: 900px;         
+    margin: 0 auto;           
+}
+
+.about h2 {
+    font-size: 2.8rem;        
+    font-weight: 800;         
+    color: #000;              
+    margin-bottom: 30px;      
+    font-family: sans-serif;  
+}
+
+.about p {
+    font-size: 1.3rem;        
+    line-height: 1.6;         
+    color: #333;              
+    max-width: 800px;         
+    margin: 0 auto;           
+    font-weight: 400;
+}
+
+
+
+/* ------------products------------- */
+.products {
+    background-color: #D3F4F4; 
+    padding: 80px 20px;       
+    text-align: center;       
+}
+
+.products h2 {
+    font-size: 2.2rem;
+    font-weight: 800;
+    margin-bottom: 50px;      
+    color: #000;
+}
+
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 30px;                
+    max-width: 1100px;       
+    margin: 0 auto;           
+}
+
+
+.product-card {
+    display: flex;
+    flex-direction: column;   
+    align-items: center;      
+}
+
+.product-img {
+    height: 200px;            
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.product-img img {
+    max-height: 100%;         
+    width: auto;
+    object-fit: contain;      
+}
+
+.product-card h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    height: 3em;              
+    display: flex;
+    align-items: center;
+}
+
+
+.btn-card {
+    background-color: #FFB85C; 
+    color: #000;
+    border: none;
+    padding: 12px 45px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.btn-card:hover {
+    background-color: #ffa52f; 
+}
+
+
+
+/* ------------rules------------- */
+.rules {
+    background-image: url('/img/bg-grid.png');
+    background-repeat: no-repeat;
+    background-size: 95%; 
+    background-position: -20% 110%; 
+    background-color: #fff;
+    padding: 95px 20px; 
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.rules-container {
+    display: grid;
+    grid-template-columns: 1.1fr 1fr; 
+    gap: 90px;
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+}
+
+.rules-text {
+    padding-left: 0; 
+}
+
+.rules-text h2 {
+    font-size: 3rem; 
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+
+.rules-text p {
+    font-size: 1.2rem;
+    line-height: 1.7;
+    max-width: 550px;
+}
+
+.rules-img {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.rules-img img {
+    width: 110%;
+    max-width: 600px; 
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+
+
+/* ------------footer------------- */
+.footer {
+    background-color: #222;
+    padding: 30px 0; 
+    color: white;
+    width: 100%;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 4%;
+}
+
+.footer-logo p {
+    font-size: 0.9rem; 
+    font-weight: 600;
+    margin: 0;
+    letter-spacing: 0.5px;
+}
+
+.footer-nav {
+    display: flex;
+    gap: 220px; 
+}
+
+.footer-nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.85rem; 
+    font-weight: 400;
+    opacity: 0.9;
+}
+
+.footer-nav a:hover {
+    opacity: 1;
+    text-decoration: underline;
+}
+
+
+/* ------------RESPONSIVE------------- */
+
