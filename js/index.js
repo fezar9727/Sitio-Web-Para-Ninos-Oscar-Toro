@@ -37,5 +37,5 @@ miPrimeraFuncion ('un nuevo mensaje de la segunda llamada');
 
 // ahora crearemos lo mismo que antes pero con const
 
-const suma = (a, b) => a + b; // esta es una función de flecha, que es una forma más concisa de escribir funciones en JavaScript.{
+const suma = (a, b) => a + b; // esta es una función de flecha, que es una forma más concisa de escribir funciones en JavaScript.
     console.log(suma(50, 90));
